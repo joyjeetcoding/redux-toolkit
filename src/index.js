@@ -8,6 +8,9 @@ import {store} from './app/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+  // After creating a store wrap everyhting in "Provider"
+  // All the things must be inside the store
     <Provider store={store} >
       <App />
     </Provider>
